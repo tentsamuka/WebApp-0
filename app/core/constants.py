@@ -1,18 +1,4 @@
-from enum import Enum
-
-class OrderStatus(str, Enum):
-    PENDING     = "pending"
-    PAID        = "paid"
-    CANCELLED   = "cancelled"
-    EXPIRED     = "expired"
-
-class PaymentStatus(str, Enum):
-    PENDING     = "pending"
-    PAID        = "paid"
-    FAILED      = "failed"
-    REFUNDED    = "refunded"
-
-class PaymentProvider(str, Enum):
-    PIX = "pix"
-    MERCADO_PAGO = "mercado_pago"
-    STRIPE = "stripe"
+DATABASE_URL="sqlite:///app/database/database.db"
+SECRET_KEY="o8yh37891v8asyv78y27YGHASD78y23h9y7AYH98Y8YG9G*&(TYasduioh)"
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30

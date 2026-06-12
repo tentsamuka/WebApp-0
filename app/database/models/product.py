@@ -3,7 +3,7 @@ from sqlalchemy import String, Boolean, Text, Numeric, ForeignKey
 from sqlalchemy import Enum as SqlEnum
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.database.connection import Base, TimestampMixin, UniqueIdentifierMixin
-from app.core.constants import OrderStatus
+from app.enums.product_enum import OrderStatus
 
 class Product(Base, UniqueIdentifierMixin, TimestampMixin):
     __tablename__="products"

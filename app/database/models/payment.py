@@ -4,7 +4,7 @@ from sqlalchemy import String, Boolean, Text, Numeric, ForeignKey, Integer, func
 from sqlalchemy import Enum as SqlEnum
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.database.connection import Base, TimestampMixin, UniqueIdentifierMixin
-from app.core.constants import PaymentStatus, PaymentProvider
+from app.enums.payment_enum import PaymentStatus, PaymentProvider
 
 class Payment(Base, UniqueIdentifierMixin, TimestampMixin):
     __tablename__="payments"

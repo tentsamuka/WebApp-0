@@ -1,7 +1,7 @@
 from datetime import datetime
 from decimal import Decimal
 from pydantic import BaseModel
-from app.core.constants import OrderStatus
+from app.enums.product_enum import OrderStatus
 
 class Product(BaseModel):
     """Defines Product"""

@@ -1,1 +1,0 @@
-db_connection_url: str = "app/database/database.db"
