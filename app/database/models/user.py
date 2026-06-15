@@ -27,3 +27,4 @@ class User(Base, UniqueIdentifierMixin, TimestampMixin):
         default=False
     )
 
+ 

@@ -36,3 +36,6 @@ class User(BaseModel):
     username: str
     email: EmailStr
     is_admin: bool = False
+
+
+

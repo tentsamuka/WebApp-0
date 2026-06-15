@@ -16,4 +16,4 @@ class Payment(BaseModel):
     status: PaymentStatus
 
     created_at: datetime
-    confirmed_at: datetime | None
+    confirmed_at: datetime | None 

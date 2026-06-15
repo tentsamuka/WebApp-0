@@ -6,3 +6,12 @@ class UserNotFounded(Exception):
 
 class WrongPasswordError(Exception):
      pass 
+
+class AccessTokenExpired(Exception):
+     pass
+
+class AccessTokenMismatch(Exception):
+     pass
+
+class InvalidCredentials(Exception):
+     pass
